@@ -1,19 +1,19 @@
 services:
-  backend:
-    build:
-      context: ./BackEndCyrk
-      dockerfile: Dockerfile
-    container_name: backend_Cyrk
-    ports:
-      - "8080:8080"
-      - "8081:8081"
-    volumes:
-      - ./BackEndCyrk:/src 
-      - /app:/app                   
-    environment:
-      DOTNET_USE_POLLING_FILE_WATCHER: "1"  
-    depends_on:
-      - db
+  # backend:
+  #   build:
+  #     context: ./BackEndCyrk
+  #     dockerfile: Dockerfile
+  #   container_name: backend_Cyrk
+  #   ports:
+  #     - "8080:8080"
+  #     - "8081:8081"
+  #   volumes:
+  #     - ./BackEndCyrk:/src 
+  #     - /app:/app                   
+  #   environment:
+  #     DOTNET_USE_POLLING_FILE_WATCHER: "1"  
+  #   depends_on:
+  #     - db
 
 
   db:

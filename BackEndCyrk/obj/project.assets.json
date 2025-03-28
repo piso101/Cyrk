@@ -516,24 +516,31 @@
     ]
   },
   "packageFolders": {
-    "/root/.nuget/packages/": {}
+    "C:\\Users\\piokn\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/src/BackEndCyrk.csproj",
+      "projectUniqueName": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\BackEndCyrk.csproj",
       "projectName": "BackEndCyrk",
-      "projectPath": "/src/BackEndCyrk.csproj",
-      "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/src/obj/",
+      "projectPath": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\BackEndCyrk.csproj",
+      "packagesPath": "C:\\Users\\piokn\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/root/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\piokn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -551,7 +558,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -585,7 +593,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

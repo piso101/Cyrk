@@ -1,30 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\",
+  "WorkspaceRootPath": "D:\\Studia\\3 rok 6 semestr\\Projekt\\Cyrk\\BackEndCyrk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|d:\\studia\\3 rok 6 semestr\\projekt\\cyrk\\backendcyrk\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|d:\\studia\\3 rok 6 semestr\\projekt\\cyrk\\backendcyrk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\controllers\\dbconntestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:controllers\\dbconntestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|d:\\studia\\3 rok 6 semestr\\projekt\\cyrk\\backendcyrk\\controllers\\dbdiagnosticcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:controllers\\dbdiagnosticcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\backendcyrk.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:backendcyrk.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\utilities\\connectiontester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|d:\\studia\\3 rok 6 semestr\\projekt\\cyrk\\backendcyrk\\utilities\\connectiontester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:utilities\\connectiontester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\controllers\\dbdiagnosticcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:controllers\\dbdiagnosticcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|d:\\studia\\3 rok 6 semestr\\projekt\\cyrk\\backendcyrk\\backendcyrk.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:backendcyrk.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|d:\\studia\\3 rok 6 semestr\\projekt\\cyrk\\backendcyrk\\controllers\\dbconntestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:controllers\\dbconntestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,13 +57,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-04-01T15:29:35.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DbDiagnosticController.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Controllers\\DbDiagnosticController.cs",
+              "DocumentMoniker": "D:\\Studia\\3 rok 6 semestr\\Projekt\\Cyrk\\BackEndCyrk\\Controllers\\DbDiagnosticController.cs",
               "RelativeDocumentMoniker": "Controllers\\DbDiagnosticController.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Controllers\\DbDiagnosticController.cs",
+              "ToolTip": "D:\\Studia\\3 rok 6 semestr\\Projekt\\Cyrk\\BackEndCyrk\\Controllers\\DbDiagnosticController.cs",
               "RelativeToolTip": "Controllers\\DbDiagnosticController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T14:16:27.912Z",
               "EditorCaption": ""
@@ -69,22 +81,22 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ConnectionTester.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Utilities\\ConnectionTester.cs",
+              "DocumentMoniker": "D:\\Studia\\3 rok 6 semestr\\Projekt\\Cyrk\\BackEndCyrk\\Utilities\\ConnectionTester.cs",
               "RelativeDocumentMoniker": "Utilities\\ConnectionTester.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Utilities\\ConnectionTester.cs",
+              "ToolTip": "D:\\Studia\\3 rok 6 semestr\\Projekt\\Cyrk\\BackEndCyrk\\Utilities\\ConnectionTester.cs",
               "RelativeToolTip": "Utilities\\ConnectionTester.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAI0AAABhAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBJwI0AAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T14:15:46.253Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BackEndCyrk",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\BackEndCyrk.csproj",
+              "DocumentIndex": 5,
+              "Title": "BackEndCyrk.csproj",
+              "DocumentMoniker": "D:\\Studia\\3 rok 6 semestr\\Projekt\\Cyrk\\BackEndCyrk\\BackEndCyrk.csproj",
               "RelativeDocumentMoniker": "BackEndCyrk.csproj",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\BackEndCyrk.csproj",
+              "ToolTip": "D:\\Studia\\3 rok 6 semestr\\Projekt\\Cyrk\\BackEndCyrk\\BackEndCyrk.csproj",
               "RelativeToolTip": "BackEndCyrk.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -95,11 +107,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\appsettings.json",
+              "DocumentMoniker": "D:\\Studia\\3 rok 6 semestr\\Projekt\\Cyrk\\BackEndCyrk\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
+              "ToolTip": "D:\\Studia\\3 rok 6 semestr\\Projekt\\Cyrk\\BackEndCyrk\\appsettings.json*",
+              "RelativeToolTip": "appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-04-01T13:45:19.031Z",
               "EditorCaption": ""
@@ -108,27 +120,37 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Program.cs",
+              "DocumentMoniker": "D:\\Studia\\3 rok 6 semestr\\Projekt\\Cyrk\\BackEndCyrk\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Program.cs",
+              "ToolTip": "D:\\Studia\\3 rok 6 semestr\\Projekt\\Cyrk\\BackEndCyrk\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T12:56:37.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "DBConnTestController.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Controllers\\DBConnTestController.cs",
+              "DocumentMoniker": "D:\\Studia\\3 rok 6 semestr\\Projekt\\Cyrk\\BackEndCyrk\\Controllers\\DBConnTestController.cs",
               "RelativeDocumentMoniker": "Controllers\\DBConnTestController.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Controllers\\DBConnTestController.cs",
+              "ToolTip": "D:\\Studia\\3 rok 6 semestr\\Projekt\\Cyrk\\BackEndCyrk\\Controllers\\DBConnTestController.cs",
               "RelativeToolTip": "Controllers\\DBConnTestController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T12:53:52.433Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 35,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

@@ -1,5 +1,4 @@
-#See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
+# Dockerfile - ASP.NET 8.0 + Hot Reload + PostgreSQL
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER app
 WORKDIR /app
@@ -11,5 +10,6 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY ["BackEndCyrk.csproj", "./"]
 RUN dotnet restore "BackEndCyrk.csproj"
-COPY . .
+COPY . . 
+ENV DefaultConnection="Host=db;Port=5432;Database=Cryk;Username=admin;Password=admin"
 ENTRYPOINT ["dotnet", "watch", "run", "--no-launch-profile", "--urls=http://*:8080"]

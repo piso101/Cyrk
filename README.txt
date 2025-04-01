@@ -1,1 +1,1 @@
-by uruchomić wpisz w powershellu docker-compose up --build
+docker-compose up --build

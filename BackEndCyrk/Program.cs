@@ -1,3 +1,5 @@
+using BackEndCyrk.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace BackEndCyrk
 {
@@ -8,6 +10,13 @@ namespace BackEndCyrk
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            bool useConn2 = false;
+            string connString = useConn2 ? "SecondaryConnection" : "DefaultConnection";
+
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseNpgsql(builder.Configuration.GetConnectionString(connString))
+                       .EnableSensitiveDataLogging()
+                       .LogTo(Console.WriteLine, LogLevel.Information));
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -26,7 +35,6 @@ namespace BackEndCyrk
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 

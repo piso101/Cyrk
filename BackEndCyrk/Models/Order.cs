@@ -1,28 +1,29 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BackEndCyrk.Models
 {
     public class Order : BaseEntity
     {
-        public DateTime OrderDate { get; set; }
-        public int CustomerId { get; set; }
-        public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+        public int UserId { get; set; }
 
-        public Order()
-        {
-            OrderDate = DateTime.Now;
-        }
+        [Required]
+        [Column(TypeName = "decimal(10,2)")]
+        public decimal TotalPrice { get; set; }
 
-        public void AddItem(OrderItem item)
-        {
-            OrderItems.Add(item);
-        }
+        [StringLength(50)]
+        public string Status { get; set; } = "Pending";
 
-        public decimal GetTotalAmount()
-        {
-            return OrderItems.Sum(item => item.TotalPrice);
-        }
+        // Navigation properties
+        [ForeignKey("UserId")]
+        public User User { get; set; }
+
+        public ICollection<OrderItem> OrderItems { get; set; }
+
+        public Payment Payment { get; set; }
+
+        public Shipping Shipping { get; set; }
     }
 }

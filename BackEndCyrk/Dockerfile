@@ -11,5 +11,5 @@ WORKDIR /src
 COPY ["BackEndCyrk.csproj", "./"]
 RUN dotnet restore "BackEndCyrk.csproj"
 COPY . . 
-ENV DefaultConnection="Host=db;Port=5432;Database=Cryk;Username=admin;Password=admin"
+ENV DefaultConnection="Host=db;Port=5432;Database=Cyrk;Username=admin;Password=admin"
 ENTRYPOINT ["dotnet", "watch", "run", "--no-launch-profile", "--urls=http://*:8080"]

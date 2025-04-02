@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\controllers\\dbdiagnosticcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:controllers\\dbdiagnosticcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\utilities\\connectiontester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:utilities\\connectiontester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\controllers\\dbconntestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:controllers\\dbconntestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\backendcyrk\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +26,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T22:02:11.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T22:02:01.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T22:01:38.835Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -54,80 +85,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-01T18:07:37.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DbDiagnosticController.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Controllers\\DbDiagnosticController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DbDiagnosticController.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Controllers\\DbDiagnosticController.cs",
-              "RelativeToolTip": "Controllers\\DbDiagnosticController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T14:16:27.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ConnectionTester.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Utilities\\ConnectionTester.cs",
-              "RelativeDocumentMoniker": "Utilities\\ConnectionTester.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Utilities\\ConnectionTester.cs",
-              "RelativeToolTip": "Utilities\\ConnectionTester.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAI0AAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T14:15:46.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-01T13:45:19.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T12:56:37.855Z",
+              "WhenOpened": "2025-04-01T21:59:24.275Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DBConnTestController.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Controllers\\DBConnTestController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DBConnTestController.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\Controllers\\DBConnTestController.cs",
-              "RelativeToolTip": "Controllers\\DBConnTestController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T12:53:52.433Z"
             }
           ]
         }

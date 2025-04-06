@@ -1,5 +1,7 @@
 using BackEndCyrk.Data;
+using BackEndCyrk.Repositories;
 using Microsoft.EntityFrameworkCore;
+using static BackEndCyrk.Repositories.IBaseRepository;
 
 namespace BackEndCyrk
 {
@@ -12,6 +14,10 @@ namespace BackEndCyrk
             // Add services to the container.
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            // Rejestracja repozytoriow
+            builder.Services.AddScoped<IShippingRepository, ShippingRepository>();
+            builder.Services.AddScoped<IShippingRateRepository, ShippingRateRepository>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

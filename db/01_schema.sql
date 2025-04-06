@@ -12,7 +12,8 @@ CREATE TABLE Users (
 CREATE TABLE Categories (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) UNIQUE NOT NULL,
-    description TEXT
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE Products (
@@ -38,7 +39,8 @@ CREATE TABLE Order_Items (
     order_id INT REFERENCES Orders(id) ON DELETE CASCADE,
     product_id INT REFERENCES Products(id) ON DELETE CASCADE,
     quantity INT NOT NULL,
-    price DECIMAL(10,2) NOT NULL
+    price DECIMAL(10,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE Payments (
@@ -54,7 +56,8 @@ CREATE TABLE Inventory (
     id SERIAL PRIMARY KEY,
     product_id INT REFERENCES Products(id) ON DELETE CASCADE,
     quantity INT NOT NULL,
-    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE Shipping (
@@ -64,12 +67,14 @@ CREATE TABLE Shipping (
     carrier VARCHAR(100),
     status VARCHAR(50) DEFAULT 'Pending',
     estimated_delivery DATE,
-    address TEXT NOT NULL
+    address TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE Shipping_Rates (
     id SERIAL PRIMARY KEY,
     carrier VARCHAR(100) NOT NULL,
     package_type VARCHAR(100) NOT NULL,
-    price DECIMAL(10,2) NOT NULL
+    price DECIMAL(10,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

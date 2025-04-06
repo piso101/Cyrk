@@ -11,12 +11,12 @@ namespace BackEndCyrk.Models
         /// <summary>
         /// Unikalny identyfikator encji.
         /// </summary>
-        public int Id { get; set; }
+        public int id { get; set; }
 
         /// <summary>
         /// Data i czas utworzenia rekordu.
         /// Domyślnie ustawiona na bieżący czas UTC.
         /// </summary>
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime created_at { get; set; } = DateTime.UtcNow;
     }
 }

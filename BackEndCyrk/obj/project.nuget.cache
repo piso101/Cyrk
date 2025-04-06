@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FChOY2dUR48=",
+  "dgSpecHash": "/Y3JyAFqso4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\BackEndCyrk\\BackEndCyrk.csproj",
+  "projectFilePath": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\BackEndCyrk.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\piokn\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\piokn\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

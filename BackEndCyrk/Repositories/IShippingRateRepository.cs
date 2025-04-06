@@ -1,8 +1,9 @@
 ﻿using BackEndCyrk.Models;
+using static BackEndCyrk.Repositories.IBaseRepository;
 
 namespace BackEndCyrk.Repositories
 {
-    public interface IShippingRateRepository : IBaseRepository
+    public interface IShippingRateRepository : IBaseRepository<ShippingRate>
     {
         Task<IEnumerable<ShippingRate>> GetRatesByCarrier(string carrier);
         Task<IEnumerable<ShippingRate>> GetRatesByPackageType(string packageType);

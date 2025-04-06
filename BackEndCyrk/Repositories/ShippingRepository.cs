@@ -17,42 +17,42 @@ namespace BackEndCyrk.Repositories
         public async Task<IEnumerable<Shipping>> GetShippingByCarrier(string carrier)
         {
             return await _dbContext.Shipping
-                .Where(s => s.Carrier == carrier)
+                .Where(s => s.carrier == carrier)
                 .ToListAsync();
         }
 
         public async Task<IEnumerable<Shipping>> GetShippingByStatus(string status)
         {
             return await _dbContext.Shipping
-                .Where(s => s.Status == status)
+                .Where(s => s.status == status)
                 .ToListAsync();
         }
 
         public async Task<Shipping> GetShippingForOrder(int orderId)
         {
             return await _dbContext.Shipping
-                .FirstOrDefaultAsync(s => s.OrderId == orderId);
+                .FirstOrDefaultAsync(s => s.order_id == orderId);
         }
 
         public async Task UpdateDelivery(int shippingId, DateTime estimatedDelivery)
         {
             await _dbContext.Shipping
-                .Where(s => s.Id == shippingId)
-                .ExecuteUpdateAsync(s => s.SetProperty(x => x.EstimatedDelivery, estimatedDelivery));
+                .Where(s => s.id == shippingId)
+                .ExecuteUpdateAsync(s => s.SetProperty(x => x.estimated_delivery, estimatedDelivery));
         }
 
         public async Task UpdateShippingStatus(int shippingId, string status)
         {
             await _dbContext.Shipping
-                .Where(s => s.Id == shippingId)
-                .ExecuteUpdateAsync(s => s.SetProperty(x => x.Status, status));
+                .Where(s => s.id == shippingId)
+                .ExecuteUpdateAsync(s => s.SetProperty(x => x.status, status));
         }
 
         public async Task UpdateTrackNumber(int shippingId, string trackingNumber)
         {
             await _dbContext.Shipping
-                .Where(s => s.Id == shippingId)
-                .ExecuteUpdateAsync(s => s.SetProperty(tn => tn.TrackingNumber, trackingNumber));
+                .Where(s => s.id == shippingId)
+                .ExecuteUpdateAsync(s => s.SetProperty(tn => tn.tracking_number, trackingNumber));
         }
     }
 }

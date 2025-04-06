@@ -38,7 +38,7 @@ namespace BackEndCyrk.Data
 
             // Konfiguracja dla Category
             modelBuilder.Entity<Category>()
-                .HasIndex(c => c.Name)
+                .HasIndex(c => c.name)
                 .IsUnique();
 
             modelBuilder.Entity<Category>()
@@ -75,8 +75,8 @@ namespace BackEndCyrk.Data
 
             modelBuilder.Entity<Order>()
                 .HasOne(o => o.Shipping)
-                .WithOne(s => s.Order)
-                .HasForeignKey<Shipping>(s => s.OrderId)
+                .WithOne(s => s.order)
+                .HasForeignKey<Shipping>(s => s.order_id)
                 .OnDelete(DeleteBehavior.Cascade);
 
             // Konfiguracja dla OrderItem
@@ -87,15 +87,15 @@ namespace BackEndCyrk.Data
                 .OnDelete(DeleteBehavior.Cascade);
 
             // Konwencje nazewnictwa tabel
-            modelBuilder.Entity<User>().ToTable("Users");
-            modelBuilder.Entity<Category>().ToTable("Categories");
-            modelBuilder.Entity<Product>().ToTable("Products");
-            modelBuilder.Entity<Order>().ToTable("Orders");
-            modelBuilder.Entity<OrderItem>().ToTable("Order_Items");
-            modelBuilder.Entity<Payment>().ToTable("Payments");
-            modelBuilder.Entity<Inventory>().ToTable("Inventory");
-            modelBuilder.Entity<Shipping>().ToTable("Shipping");
-            modelBuilder.Entity<ShippingRate>().ToTable("Shipping_Rates");
+            modelBuilder.Entity<User>().ToTable("users");
+            modelBuilder.Entity<Category>().ToTable("categories");
+            modelBuilder.Entity<Product>().ToTable("products");
+            modelBuilder.Entity<Order>().ToTable("orders");
+            modelBuilder.Entity<OrderItem>().ToTable("order_Items");
+            modelBuilder.Entity<Payment>().ToTable("payments");
+            modelBuilder.Entity<Inventory>().ToTable("inventory");
+            modelBuilder.Entity<Shipping>().ToTable("shipping");
+            modelBuilder.Entity<ShippingRate>().ToTable("shipping_Rates");
         }
     }
 }

@@ -6,13 +6,13 @@ public class ShippingRate : BaseEntity
 {
     [Required]
     [StringLength(100)]
-    public string Carrier { get; set; }
+    public string carrier { get; set; }
 
     [Required]
     [StringLength(100)]
-    public string PackageType { get; set; }
+    public string package_type { get; set; }
 
     [Required]
     [Column(TypeName = "decimal(10,2)")]
-    public decimal Price { get; set; }
+    public decimal price { get; set; }
 }

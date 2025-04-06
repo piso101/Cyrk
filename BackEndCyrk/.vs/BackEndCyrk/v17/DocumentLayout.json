@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\repositories\\shippingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:repositories\\shippingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\repositories\\shippingraterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:repositories\\shippingraterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\repositories\\ishippingraterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:repositories\\ishippingraterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\models\\shipping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\shipping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\models\\shippingrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\shippingrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\repositories\\ishippingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:repositories\\ishippingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,93 +46,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ShippingRate.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\ShippingRate.cs",
-              "RelativeDocumentMoniker": "Models\\ShippingRate.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\ShippingRate.cs",
-              "RelativeToolTip": "Models\\ShippingRate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:49:41.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Repositories\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Repositories\\BaseRepository.cs",
-              "RelativeToolTip": "Repositories\\BaseRepository.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAGgAAAAFAAAAAAAAAA==",
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Models\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:19:57.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShippingRateRepository.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Repositories\\ShippingRateRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\ShippingRateRepository.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Repositories\\ShippingRateRepository.cs",
-              "RelativeToolTip": "Repositories\\ShippingRateRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:19:19.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ShippingRepository.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Repositories\\ShippingRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\ShippingRepository.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Repositories\\ShippingRepository.cs",
-              "RelativeToolTip": "Repositories\\ShippingRepository.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADYAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:19:18.875Z",
+              "WhenOpened": "2025-04-06T15:08:01.416Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IShippingRateRepository.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Repositories\\IShippingRateRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IShippingRateRepository.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Repositories\\IShippingRateRepository.cs",
-              "RelativeToolTip": "Repositories\\IShippingRateRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:19:08.727Z",
+              "WhenOpened": "2025-04-06T15:07:19.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IShippingRepository.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Repositories\\IShippingRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IShippingRepository.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Repositories\\IShippingRepository.cs",
-              "RelativeToolTip": "Repositories\\IShippingRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ShippingRate.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\ShippingRate.cs",
+              "RelativeDocumentMoniker": "Models\\ShippingRate.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\ShippingRate.cs",
+              "RelativeToolTip": "Models\\ShippingRate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:18:55.028Z",
+              "WhenOpened": "2025-04-06T14:56:37.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Shipping.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Shipping.cs",
+              "RelativeDocumentMoniker": "Models\\Shipping.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Shipping.cs",
+              "RelativeToolTip": "Models\\Shipping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T21:59:24.275Z",
+              "WhenOpened": "2025-04-06T14:56:37.042Z",
               "EditorCaption": ""
             }
           ]

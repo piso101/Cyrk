@@ -1,8 +1,9 @@
 ﻿using BackEndCyrk.Models;
+using static BackEndCyrk.Repositories.IBaseRepository;
 
 namespace BackEndCyrk.Repositories
 {
-    public interface IShippingRepository : IBaseRepository
+    public interface IShippingRepository : IBaseRepository<Shipping>
     {
         Task<IEnumerable<Shipping>> GetShippingByStatus(string status);
         Task<Shipping> GetShippingForOrder(int orderId);

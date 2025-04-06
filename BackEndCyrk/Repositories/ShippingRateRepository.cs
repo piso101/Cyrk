@@ -16,12 +16,12 @@ namespace BackEndCyrk.Repositories
 
         public async Task<decimal> GetHighestRate()
         {
-            return await _dbContext.ShippingRates.MaxAsync(sr => sr.Price);
+            return await _dbContext.ShippingRates.MaxAsync(sr => sr.price);
         }
 
         public async Task<decimal> GetLowestRate()
         {
-            return await _dbContext.ShippingRates.MinAsync(sr => sr.Price);
+            return await _dbContext.ShippingRates.MinAsync(sr => sr.price);
         }
 
         /// <summary>
@@ -32,18 +32,18 @@ namespace BackEndCyrk.Repositories
         /// <returns></returns>
         public async Task<ShippingRate> GetRateByCarrierAndPackageType(string carrier, string packageType)
         {
-            return await _dbContext.ShippingRates.Where(sr => sr.Carrier == carrier && sr.PackageType == packageType)
+            return await _dbContext.ShippingRates.Where(sr => sr.carrier == carrier && sr.package_type == packageType)
                 .FirstOrDefaultAsync();
         }
 
         public async Task<IEnumerable<ShippingRate>> GetRatesByCarrier(string carrier)
         {
-            return await _dbContext.ShippingRates.Where(sr => sr.Carrier == carrier).ToListAsync();
+            return await _dbContext.ShippingRates.Where(sr => sr.carrier == carrier).ToListAsync();
         }
 
         public async Task<IEnumerable<ShippingRate>> GetRatesByPackageType(string packageType)
         {
-            return await _dbContext.ShippingRates.Where(sr => sr.PackageType == packageType)
+            return await _dbContext.ShippingRates.Where(sr => sr.package_type == packageType)
                 .ToListAsync();
         }
 
@@ -66,7 +66,7 @@ namespace BackEndCyrk.Repositories
                 throw new ArgumentException("Minimum price cannot be greater than maximum price.");
             }
 
-            return await _dbContext.ShippingRates.Where(sr => sr.Price >= minPrice && sr.Price <= maxPrice)
+            return await _dbContext.ShippingRates.Where(sr => sr.price >= minPrice && sr.price <= maxPrice)
                 .ToListAsync();
         }
     }

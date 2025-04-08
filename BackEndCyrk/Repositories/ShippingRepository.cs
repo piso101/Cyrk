@@ -14,21 +14,21 @@ namespace BackEndCyrk.Repositories
             _dbContext = context;
         }
 
-        public async Task<IEnumerable<Shipping>> GetShippingByCarrier(string carrier)
+        public async Task<IEnumerable<Shipping>> GetByCarrier(string carrier)
         {
             return await _dbContext.Shipping
                 .Where(s => s.carrier == carrier)
                 .ToListAsync();
         }
 
-        public async Task<IEnumerable<Shipping>> GetShippingByStatus(string status)
+        public async Task<IEnumerable<Shipping>> GetByStatus(string status)
         {
             return await _dbContext.Shipping
                 .Where(s => s.status == status)
                 .ToListAsync();
         }
 
-        public async Task<Shipping> GetShippingForOrder(int orderId)
+        public async Task<Shipping> GetByOrderId(int orderId)
         {
             return await _dbContext.Shipping
                 .FirstOrDefaultAsync(s => s.order_id == orderId);
@@ -41,7 +41,7 @@ namespace BackEndCyrk.Repositories
                 .ExecuteUpdateAsync(s => s.SetProperty(x => x.estimated_delivery, estimatedDelivery));
         }
 
-        public async Task UpdateShippingStatus(int shippingId, string status)
+        public async Task UpdateStatus(int shippingId, string status)
         {
             await _dbContext.Shipping
                 .Where(s => s.id == shippingId)

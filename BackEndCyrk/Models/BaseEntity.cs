@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BackEndCyrk.Models
+﻿namespace BackEndCyrk.Models
 {
     /// <summary>
     /// Klasa bazowa dla wszystkich modeli w systemie.

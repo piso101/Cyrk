@@ -6,7 +6,7 @@ namespace BackEndCyrk.Models;
 public class Shipping : BaseEntity
 {
     [Required]
-    public int order_id { get; set; }
+    public required int order_id { get; set; }
 
     [StringLength(255)]
     public string tracking_number { get; set; }
@@ -21,9 +21,9 @@ public class Shipping : BaseEntity
     public DateTime? estimated_delivery { get; set; }
 
     [Required]
-    public string address { get; set; }
+    public required string address { get; set; }
 
     // Relacje
     [ForeignKey("order_id")]
-    public virtual Order order { get; set; }
+    public virtual Order Order { get; set; }
 }

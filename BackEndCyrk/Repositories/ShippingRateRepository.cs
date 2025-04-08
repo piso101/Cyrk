@@ -30,18 +30,18 @@ namespace BackEndCyrk.Repositories
         /// <param name="carrier"></param>
         /// <param name="packageType"></param>
         /// <returns></returns>
-        public async Task<ShippingRate> GetRateByCarrierAndPackageType(string carrier, string packageType)
+        public async Task<ShippingRate> GetByCarrierAndPackageType(string carrier, string packageType)
         {
             return await _dbContext.ShippingRates.Where(sr => sr.carrier == carrier && sr.package_type == packageType)
                 .FirstOrDefaultAsync();
         }
 
-        public async Task<IEnumerable<ShippingRate>> GetRatesByCarrier(string carrier)
+        public async Task<IEnumerable<ShippingRate>> GetByCarrier(string carrier)
         {
             return await _dbContext.ShippingRates.Where(sr => sr.carrier == carrier).ToListAsync();
         }
 
-        public async Task<IEnumerable<ShippingRate>> GetRatesByPackageType(string packageType)
+        public async Task<IEnumerable<ShippingRate>> GetByPackageType(string packageType)
         {
             return await _dbContext.ShippingRates.Where(sr => sr.package_type == packageType)
                 .ToListAsync();
@@ -55,7 +55,7 @@ namespace BackEndCyrk.Repositories
         /// <param name="maxPrice"></param>
         /// <returns></returns>
         /// <exception cref="ArgumentException"></exception>
-        public async Task<IEnumerable<ShippingRate>> GetRatesByPriceRange(decimal minPrice, decimal maxPrice)
+        public async Task<IEnumerable<ShippingRate>> GetByPriceRange(decimal minPrice, decimal maxPrice)
         {
             if (minPrice < 0 || maxPrice < 0)
             {

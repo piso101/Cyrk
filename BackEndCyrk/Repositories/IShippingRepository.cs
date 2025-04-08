@@ -5,11 +5,11 @@ namespace BackEndCyrk.Repositories
 {
     public interface IShippingRepository : IBaseRepository<Shipping>
     {
-        Task<IEnumerable<Shipping>> GetShippingByStatus(string status);
-        Task<Shipping> GetShippingForOrder(int orderId);
-        Task UpdateShippingStatus(int shippingId, string status);
+        Task<IEnumerable<Shipping>> GetByStatus(string status);
+        Task<Shipping> GetByOrderId(int orderId);
+        Task UpdateStatus(int shippingId, string status);
         Task UpdateTrackNumber(int shippingId, string trackingNumber);
         Task UpdateDelivery(int shippingId, DateTime estimatedDelivery);
-        Task<IEnumerable<Shipping>> GetShippingByCarrier(string carrier);
+        Task<IEnumerable<Shipping>> GetByCarrier(string carrier);
     }
 }

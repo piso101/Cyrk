@@ -5,11 +5,11 @@ namespace BackEndCyrk.Repositories
 {
     public interface IShippingRateRepository : IBaseRepository<ShippingRate>
     {
-        Task<IEnumerable<ShippingRate>> GetRatesByCarrier(string carrier);
-        Task<IEnumerable<ShippingRate>> GetRatesByPackageType(string packageType);
-        Task<ShippingRate> GetRateByCarrierAndPackageType(string carrier, string packageType);
+        Task<IEnumerable<ShippingRate>> GetByCarrier(string carrier);
+        Task<IEnumerable<ShippingRate>> GetByPackageType(string packageType);
+        Task<ShippingRate> GetByCarrierAndPackageType(string carrier, string packageType);
         Task<decimal> GetLowestRate();
         Task<decimal> GetHighestRate();
-        Task<IEnumerable<ShippingRate>> GetRatesByPriceRange(decimal minPrice, decimal maxPrice);
+        Task<IEnumerable<ShippingRate>> GetByPriceRange(decimal minPrice, decimal maxPrice);
     }
 }

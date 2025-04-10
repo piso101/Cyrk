@@ -9,26 +9,26 @@ namespace BackEndCyrk.Models
     {
         [Required]
         [StringLength(255)]
-        public string Name { get; set; }
+        public string name { get; set; }
 
         [Required]
         [StringLength(255)]
-        public string Surname { get; set; }
+        public string surname { get; set; }
 
         [Required]
         [StringLength(255)]
         [EmailAddress]
-        public string Email { get; set; }
+        public string email { get; set; }
 
         [Required]
-        public string PasswordHash { get; set; }
+        public string password_hash { get; set; }
 
-        public string Address { get; set; }
+        public string address { get; set; }
 
         [StringLength(20)]
-        public string Phone { get; set; }
+        public string phone { get; set; }
 
         // Navigation properties
-        public ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

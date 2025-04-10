@@ -7,16 +7,16 @@ namespace BackEndCyrk.Models
     public class Inventory : BaseEntity
     {
         [Required]
-        public int ProductId { get; set; }
+        public int product_id { get; set; }
 
         [Required]
-        public int Quantity { get; set; }
+        public int quantity { get; set; }
 
         [Required]
-        public DateTime LastUpdated { get; set; } = DateTime.UtcNow;
+        public DateTime last_updated { get; set; } = DateTime.UtcNow;
 
         // Relacja do tabeli Products
-        [ForeignKey("ProductId")]
+        [ForeignKey("product_id")]
         public virtual Product Product { get; set; }
     }
 }

@@ -27,13 +27,13 @@ namespace BackEndCyrk.Data
 
             // Konfiguracja dla User
             modelBuilder.Entity<User>()
-                .HasIndex(u => u.Email)
+                .HasIndex(u => u.email)
                 .IsUnique();
 
             modelBuilder.Entity<User>()
                 .HasMany(u => u.Orders)
                 .WithOne(o => o.User)
-                .HasForeignKey(o => o.UserId)
+                .HasForeignKey(o => o.user_id)
                 .OnDelete(DeleteBehavior.Cascade);
 
             // Konfiguracja dla Category
@@ -44,38 +44,38 @@ namespace BackEndCyrk.Data
             modelBuilder.Entity<Category>()
                 .HasMany(c => c.Products)
                 .WithOne(p => p.Category)
-                .HasForeignKey(p => p.CategoryId)
+                .HasForeignKey(p => p.category_id)
                 .OnDelete(DeleteBehavior.SetNull);
 
             // Konfiguracja dla Product
             modelBuilder.Entity<Product>()
                 .HasOne(p => p.Category)
                 .WithMany(c => c.Products)
-                .HasForeignKey(p => p.CategoryId)
+                .HasForeignKey(p => p.category_id)
                 .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<Product>()
                 .HasOne(p => p.Inventory)
                 .WithOne(i => i.Product)
-                .HasForeignKey<Inventory>(i => i.ProductId)
+                .HasForeignKey<Inventory>(i => i.product_id)
                 .OnDelete(DeleteBehavior.Cascade);
 
             // Konfiguracja dla Order
             modelBuilder.Entity<Order>()
                 .HasMany(o => o.OrderItems)
                 .WithOne(oi => oi.Order)
-                .HasForeignKey(oi => oi.OrderId)
+                .HasForeignKey(oi => oi.order_id)
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Order>()
                 .HasOne(o => o.Payment)
-                .WithOne(p => p.Order)
-                .HasForeignKey<Payment>(p => p.OrderId)
+                .WithOne(p => p.order)
+                .HasForeignKey<Payment>(p => p.order_id)
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Order>()
                 .HasOne(o => o.Shipping)
-                .WithOne(s => s.order)
+                .WithOne(s => s.Order)
                 .HasForeignKey<Shipping>(s => s.order_id)
                 .OnDelete(DeleteBehavior.Cascade);
 
@@ -83,7 +83,7 @@ namespace BackEndCyrk.Data
             modelBuilder.Entity<OrderItem>()
                 .HasOne(oi => oi.Product)
                 .WithMany(p => p.OrderItems)
-                .HasForeignKey(oi => oi.ProductId)
+                .HasForeignKey(oi => oi.product_id)
                 .OnDelete(DeleteBehavior.Cascade);
 
             // Konwencje nazewnictwa tabel
@@ -91,11 +91,11 @@ namespace BackEndCyrk.Data
             modelBuilder.Entity<Category>().ToTable("categories");
             modelBuilder.Entity<Product>().ToTable("products");
             modelBuilder.Entity<Order>().ToTable("orders");
-            modelBuilder.Entity<OrderItem>().ToTable("order_Items");
+            modelBuilder.Entity<OrderItem>().ToTable("order_items");
             modelBuilder.Entity<Payment>().ToTable("payments");
             modelBuilder.Entity<Inventory>().ToTable("inventory");
             modelBuilder.Entity<Shipping>().ToTable("shipping");
-            modelBuilder.Entity<ShippingRate>().ToTable("shipping_Rates");
+            modelBuilder.Entity<ShippingRate>().ToTable("shipping_rates");
         }
     }
 }

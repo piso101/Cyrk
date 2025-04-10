@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -7,23 +5,23 @@ namespace BackEndCyrk.Models
 {
     public class Order : BaseEntity
     {
-        public int UserId { get; set; }
+        public int user_id { get; set; }
 
         [Required]
         [Column(TypeName = "decimal(10,2)")]
-        public decimal TotalPrice { get; set; }
+        public decimal total_price { get; set; }
 
         [StringLength(50)]
-        public string Status { get; set; } = "Pending";
+        public string status { get; set; } = "Pending";
 
         // Navigation properties
-        [ForeignKey("UserId")]
-        public User User { get; set; }
+        [ForeignKey("user_id")]
+        public virtual User User { get; set; }
 
-        public ICollection<OrderItem> OrderItems { get; set; }
+        public virtual ICollection<OrderItem> OrderItems { get; set; }
 
-        public Payment Payment { get; set; }
+        public virtual Payment Payment { get; set; }
 
-        public Shipping Shipping { get; set; }
+        public virtual Shipping Shipping { get; set; }
     }
 }

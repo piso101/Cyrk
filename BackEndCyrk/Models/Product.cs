@@ -9,25 +9,25 @@ namespace BackEndCyrk.Models
     {
         [Required]
         [StringLength(255)]
-        public string Name { get; set; }
+        public string name { get; set; }
 
-        public string Description { get; set; }
+        public string description { get; set; }
 
         [Required]
         [Column(TypeName = "decimal(10,2)")]
-        public decimal Price { get; set; }
+        public decimal price { get; set; }
 
-        public int? CategoryId { get; set; }
+        public int? category_id { get; set; }
 
         [Required]
-        public int Stock { get; set; } = 0;
+        public int stock { get; set; } = 0;
 
         // Navigation properties
-        [ForeignKey("CategoryId")]
-        public Category Category { get; set; }
+        [ForeignKey("category_id")]
+        public virtual Category Category { get; set; }
 
-        public Inventory Inventory { get; set; }
+        public virtual Inventory Inventory { get; set; }
 
-        public ICollection<OrderItem> OrderItems { get; set; }
+        public virtual ICollection<OrderItem> OrderItems { get; set; }
     }
 }

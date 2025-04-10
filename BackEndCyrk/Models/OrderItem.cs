@@ -5,22 +5,22 @@ namespace BackEndCyrk.Models
 {
     public class OrderItem : BaseEntity
     {
-        public int OrderId { get; set; }
+        public int order_id { get; set; }
 
-        public int ProductId { get; set; }
+        public int product_id { get; set; }
 
         [Required]
-        public int Quantity { get; set; }
+        public int quantity { get; set; }
 
         [Required]
         [Column(TypeName = "decimal(10,2)")]
-        public decimal Price { get; set; }
+        public decimal price { get; set; }
 
         // Navigation properties
-        [ForeignKey("OrderId")]
-        public Order Order { get; set; }
+        [ForeignKey("order_id")]
+        public virtual Order Order { get; set; }
 
-        [ForeignKey("ProductId")]
-        public Product Product { get; set; }
+        [ForeignKey("product_id")]
+        public virtual Product Product { get; set; }
     }
 }

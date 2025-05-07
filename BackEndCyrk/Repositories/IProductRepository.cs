@@ -1,6 +1,5 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using BackEndCyrk.Models;
+using static BackEndCyrk.Repositories.IBaseRepository;
 
 namespace BackEndCyrk.Repositories
 {

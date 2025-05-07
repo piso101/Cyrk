@@ -9,7 +9,8 @@ namespace BackEndCyrk.Repositories
         Task<IEnumerable<Category>> GetAllAsync();
         Task<Category> GetByIdAsync(int id);
         Task<Category> AddAsync(Category category);
-        
+        Task<Category> GetByNameAsync(string name);
+
         Task<bool> UpdateAsync(Category category);
         Task<bool> DeleteAsync(int id);
         Task<Category> GetWithProductsAsync(int id);

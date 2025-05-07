@@ -1,7 +1,7 @@
 using BackEndCyrk.Data;
 using BackEndCyrk.Repositories;
 using Microsoft.EntityFrameworkCore;
-using static BackEndCyrk.Repositories.IBaseRepository;
+using System.Text.Json.Serialization;
 
 namespace BackEndCyrk
 {
@@ -18,9 +18,22 @@ namespace BackEndCyrk
             // Rejestracja repozytoriow
             builder.Services.AddScoped<IShippingRepository, ShippingRepository>();
             builder.Services.AddScoped<IShippingRateRepository, ShippingRateRepository>();
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
-            builder.Services.AddControllers();
+            // Konfiguracja JSON serializera, aby uniknąć cykli w relacjach
+            builder.Services.AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    // Ignoruj cykle referencji (rozwiązuje problem z nawigacją między obiektami)
+                    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+
+                    // Nie uwzględniaj właściwości, które mają wartość null
+                    options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+                });
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 

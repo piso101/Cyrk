@@ -1,6 +1,7 @@
 using BackEndCyrk.Models;
 using BackEndCyrk.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace BackEndCyrk.Controllers
 {
@@ -15,7 +16,6 @@ namespace BackEndCyrk.Controllers
             _productRepository = productRepository;
         }
 
-        // GET: api/Product
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Product>>> GetAllProducts()
@@ -24,23 +24,15 @@ namespace BackEndCyrk.Controllers
             return Ok(products);
         }
 
-        // GET: api/Product/1
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
-
-            if (product == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(product);
+            return product == null ? NotFound() : Ok(product);
         }
 
-        // GET: api/Product/category/1
         [HttpGet("category/{categoryId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Product>>> GetProductsByCategory(int categoryId)
@@ -49,7 +41,6 @@ namespace BackEndCyrk.Controllers
             return Ok(products);
         }
 
-        // GET: api/Product/search/name
         [HttpGet("search/{searchTerm}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Product>>> SearchProductsByName(string searchTerm)
@@ -58,95 +49,116 @@ namespace BackEndCyrk.Controllers
             return Ok(products);
         }
 
-        // POST: api/Product
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<Product>> CreateProduct(Product product)
+        public async Task<ActionResult<Product>> CreateProduct([FromBody] ProductCreateDto productDto)
         {
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            try
             {
-                return BadRequest(ModelState);
+                var product = new Product
+                {
+                    name = productDto.Name,
+                    description = productDto.Description,
+                    price = productDto.Price,
+                    category_id = productDto.CategoryId,
+                    stock = productDto.Stock
+                };
+
+                var createdProduct = await _productRepository.AddAsync(product);
+                return CreatedAtAction(nameof(GetProduct), new { id = createdProduct.id }, createdProduct);
             }
-
-            var createdProduct = await _productRepository.AddAsync(product);
-
-            return CreatedAtAction(nameof(GetProduct), new { id = createdProduct.id }, createdProduct);
+            catch (Exception ex)
+            {
+                return BadRequest($"Error creating product: {ex.Message}");
+            }
         }
 
-        // PUT: api/Product/1
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> UpdateProduct(int id, Product product)
+        public async Task<IActionResult> UpdateProduct(int id, [FromBody] ProductUpdateDto productDto)
         {
-            if (id != product.id)
-            {
-                return BadRequest();
-            }
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            if (id != productDto.Id) return BadRequest("ID mismatch");
 
             var exists = await _productRepository.ExistsAsync(id);
-            if (!exists)
-            {
-                return NotFound();
-            }
+            if (!exists) return NotFound();
 
-            var success = await _productRepository.UpdateAsync(product);
-            if (!success)
+            try
             {
-                return BadRequest("Failed to update product");
-            }
+                var product = new Product
+                {
+                    id = productDto.Id,
+                    name = productDto.Name,
+                    description = productDto.Description,
+                    price = productDto.Price,
+                    category_id = productDto.CategoryId,
+                    stock = productDto.Stock
+                };
 
-            return NoContent();
+                var success = await _productRepository.UpdateAsync(product);
+                return success ? NoContent() : BadRequest("Update failed");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Error updating product: {ex.Message}");
+            }
         }
 
-        // PATCH: api/Product/1/stock/10
         [HttpPatch("{id}/stock/{quantity}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> UpdateProductStock(int id, int quantity)
         {
-            if (quantity < 0)
-            {
-                return BadRequest("Stock quantity cannot be negative");
-            }
+            if (quantity < 0) return BadRequest("Stock cannot be negative");
 
             var exists = await _productRepository.ExistsAsync(id);
-            if (!exists)
-            {
-                return NotFound();
-            }
+            if (!exists) return NotFound();
 
             var success = await _productRepository.UpdateStockAsync(id, quantity);
-            if (!success)
-            {
-                return BadRequest("Failed to update product stock");
-            }
-
-            return NoContent();
+            return success ? NoContent() : BadRequest("Stock update failed");
         }
 
-        // DELETE: api/Product/1
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> DeleteProduct(int id)
         {
             var exists = await _productRepository.ExistsAsync(id);
-            if (!exists)
-            {
-                return NotFound();
-            }
+            if (!exists) return NotFound();
 
             var success = await _productRepository.DeleteAsync(id);
-            if (!success)
-            {
-                return BadRequest("Failed to delete product");
-            }
-
-            return NoContent();
+            return success ? NoContent() : BadRequest("Deletion failed");
         }
+    }
+
+    public class ProductCreateDto
+    {
+        [Required]
+        [StringLength(255, MinimumLength = 3)]
+        public string Name { get; set; }
+
+        public string Description { get; set; }
+
+        [Required]
+        [Range(0.01, double.MaxValue)]
+        public decimal Price { get; set; }
+
+        public int? CategoryId { get; set; }
+
+        [Required]
+        [Range(0, int.MaxValue)]
+        public int Stock { get; set; } = 0;
+    }
+
+    public class ProductUpdateDto : ProductCreateDto
+    {
+        [Required]
+        public int Id { get; set; }
     }
 }

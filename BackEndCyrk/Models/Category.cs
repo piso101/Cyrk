@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace BackEndCyrk.Models;
 
@@ -11,5 +12,6 @@ public class Category : BaseEntity
     public string description { get; set; }
         
     // Relacja jeden-do-wielu z Products
-    public virtual ICollection<Product> Products { get; set; }
+   // [JsonIgnore]
+    public virtual ICollection<Product> Products { get; set; } = new List<Product>();
 }

@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\controllers\\shippingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:controllers\\shippingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\controllers\\shippingratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:controllers\\shippingratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\dtos\\shippingratedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:dtos\\shippingratedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\models\\shippingrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\shippingrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\models\\shipping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\shipping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\dtos\\shippingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:dtos\\shippingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,14 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +62,177 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShippingRateController.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Controllers\\ShippingRateController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ShippingRateController.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Controllers\\ShippingRateController.cs",
+              "RelativeToolTip": "Controllers\\ShippingRateController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:20:03.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShippingController.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Controllers\\ShippingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ShippingController.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Controllers\\ShippingController.cs",
+              "RelativeToolTip": "Controllers\\ShippingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:19:59.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShippingRateDto.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\DTOs\\ShippingRateDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\ShippingRateDto.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\DTOs\\ShippingRateDto.cs",
+              "RelativeToolTip": "DTOs\\ShippingRateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:12:11.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShippingRate.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\ShippingRate.cs",
+              "RelativeDocumentMoniker": "Models\\ShippingRate.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\ShippingRate.cs",
+              "RelativeToolTip": "Models\\ShippingRate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:13:10.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShippingDto.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\DTOs\\ShippingDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\ShippingDto.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\DTOs\\ShippingDto.cs",
+              "RelativeToolTip": "DTOs\\ShippingDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:06:08.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Shipping.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Shipping.cs",
+              "RelativeDocumentMoniker": "Models\\Shipping.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Shipping.cs",
+              "RelativeToolTip": "Models\\Shipping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T15:10:24.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T10:56:12.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T15:19:34.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Models\\OrderItem.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T15:19:33.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T15:19:33.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T15:13:18.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Inventory.cs",
+              "RelativeDocumentMoniker": "Models\\Inventory.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Inventory.cs",
+              "RelativeToolTip": "Models\\Inventory.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T15:13:17.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T15:13:14.391Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -55,97 +248,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:19:34.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\OrderItem.cs",
-              "RelativeDocumentMoniker": "Models\\OrderItem.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\OrderItem.cs",
-              "RelativeToolTip": "Models\\OrderItem.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:19:33.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Order.cs",
-              "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:19:33.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Payment.cs",
-              "RelativeDocumentMoniker": "Models\\Payment.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Payment.cs",
-              "RelativeToolTip": "Models\\Payment.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:13:18.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Inventory.cs",
-              "RelativeDocumentMoniker": "Models\\Inventory.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Inventory.cs",
-              "RelativeToolTip": "Models\\Inventory.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:13:17.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:13:14.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Shipping.cs",
-              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Shipping.cs",
-              "RelativeDocumentMoniker": "Models\\Shipping.cs",
-              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\Shipping.cs",
-              "RelativeToolTip": "Models\\Shipping.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAmwBsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:10:24.167Z",
-              "EditorCaption": ""
             }
           ]
         }

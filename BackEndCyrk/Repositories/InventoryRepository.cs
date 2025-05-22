@@ -1,3 +1,5 @@
+// InventoryRepository.cs
+using BackEndCyrk.Data;
 using BackEndCyrk.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -11,7 +13,7 @@ namespace BackEndCyrk.Repositories
     /// </summary>
     public class InventoryRepository : BaseRepository<Inventory>, IInventoryRepository
     {
-        public InventoryRepository(DbContext context) : base(context)
+        public InventoryRepository(ApplicationDbContext context) : base(context)
         {
         }
 

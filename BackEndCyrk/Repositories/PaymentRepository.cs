@@ -1,3 +1,5 @@
+// PaymentRepository.cs
+using BackEndCyrk.Data;
 using BackEndCyrk.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -11,7 +13,7 @@ namespace BackEndCyrk.Repositories
     /// </summary>
     public class PaymentRepository : BaseRepository<Payment>, IPaymentRepository
     {
-        public PaymentRepository(DbContext context) : base(context)
+        public PaymentRepository(ApplicationDbContext context) : base(context)
         {
         }
 

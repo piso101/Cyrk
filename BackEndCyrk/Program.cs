@@ -20,6 +20,8 @@ namespace BackEndCyrk
             builder.Services.AddScoped<IShippingRateRepository, ShippingRateRepository>();
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+            builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
+            builder.Services.AddScoped<IInventoryRepository, InventoryRepository>();
 
             // Konfiguracja JSON serializera, aby uniknąć cykli w relacjach
             builder.Services.AddControllers()

@@ -1,6 +1,7 @@
 // PaymentController.cs
 using BackEndCyrk.Models;
 using BackEndCyrk.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BackEndCyrk.Controllers
@@ -17,6 +18,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // GET: api/Payment
+        [Authorize]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Payment>>> GetAllPayments()
@@ -26,6 +28,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // GET: api/Payment/5
+        [Authorize]
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -38,6 +41,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // GET: api/Payment/order/5
+        [Authorize]
         [HttpGet("order/{orderId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -50,6 +54,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // GET: api/Payment/status/Pending
+        [Authorize]
         [HttpGet("status/{status}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Payment>>> GetByStatus(string status)
@@ -59,6 +64,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // GET: api/Payment/method/CreditCard
+        [Authorize]
         [HttpGet("method/{method}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Payment>>> GetByMethod(string method)
@@ -68,6 +74,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // POST: api/Payment
+        [Authorize]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -81,6 +88,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // PUT: api/Payment/5
+        [Authorize]
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -100,6 +108,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // PATCH: api/Payment/5/status/Completed
+        [Authorize]
         [HttpPatch("{id}/status/{status}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -114,6 +123,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // PATCH: api/Payment/5/transaction/ABC123
+        [Authorize]
         [HttpPatch("{id}/transaction/{transactionId}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -128,6 +138,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // DELETE: api/Payment/5
+        [Authorize]
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

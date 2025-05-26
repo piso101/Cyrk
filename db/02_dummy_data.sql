@@ -1,6 +1,6 @@
 INSERT INTO Users (name, surname, email, password_hash, address, phone) VALUES
-('Jan', 'Kowalski', 'jan.kowalski@example.com', 'hashedpassword', 'ul. Przykładowa 1, Warszawa', '123456789'),
-('Anna', 'Nowak', 'anna.nowak@example.com', 'hashedpassword', 'ul. Fikcyjna 2, Kraków', '987654321');
+('Jan', 'Kowalski', 'jan.kowalski@example.com', '$2a$11$1SrGIszxtPbCIYaLY5NBvuqq4Lk/b8alRAW7ude4zO5Dy.XjANUg2', 'ul. Przykładowa 1, Warszawa', '123456789'),
+('Anna', 'Nowak', 'anna.nowak@example.com', '$2a$11$1SrGIszxtPbCIYaLY5NBvuqq4Lk/b8alRAW7ude4zO5Dy.XjANUg2', 'ul. Fikcyjna 2, Kraków', '987654321');
 
 INSERT INTO Categories (name, description) VALUES
 ('Elektronika', 'Urządzenia elektroniczne'),

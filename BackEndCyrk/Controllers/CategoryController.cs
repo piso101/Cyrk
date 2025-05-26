@@ -1,5 +1,6 @@
 using BackEndCyrk.Models;
 using BackEndCyrk.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
@@ -15,13 +16,13 @@ namespace BackEndCyrk.Controllers
         {
             _categoryRepository = categoryRepository;
         }
-
+        [Authorize]
         [HttpGet("test")]
         public IActionResult Test()
         {
             return Ok("Test works");
         }
-        
+        [Authorize]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Category>>> GetAllCategories()
@@ -29,7 +30,7 @@ namespace BackEndCyrk.Controllers
             var categories = await _categoryRepository.GetAllAsync();
             return Ok(categories);
         }
-
+        [Authorize]
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -39,7 +40,7 @@ namespace BackEndCyrk.Controllers
             if (category == null) return NotFound();
             return Ok(category);
         }
-
+        [Authorize]
         [HttpGet("{id}/products")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -49,7 +50,7 @@ namespace BackEndCyrk.Controllers
             if (category == null) return NotFound();
             return Ok(category);
         }
-
+        [Authorize]
         [HttpGet("search/{searchTerm}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Category>>> SearchCategoriesByName(string searchTerm)
@@ -57,7 +58,7 @@ namespace BackEndCyrk.Controllers
             var categories = await _categoryRepository.SearchByNameAsync(searchTerm);
             return Ok(categories);
         }
-
+        [Authorize]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -91,7 +92,7 @@ namespace BackEndCyrk.Controllers
                 return BadRequest($"Failed to create category: {ex.Message}");
             }
         }
-
+        [Authorize]
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -103,7 +104,7 @@ namespace BackEndCyrk.Controllers
             if (!await _categoryRepository.UpdateAsync(category)) return BadRequest("Failed to update category");
             return NoContent();
         }
-
+        [Authorize]
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

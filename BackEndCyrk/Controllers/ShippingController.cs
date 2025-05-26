@@ -1,5 +1,6 @@
 ﻿using BackEndCyrk.Models;
 using BackEndCyrk.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BackEndCyrk.Controllers {
@@ -13,6 +14,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // GET: api/Shipping
+        [Authorize]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Shipping>>> GetAllShippings() {
@@ -21,6 +23,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // GET: api/Shipping/1
+        [Authorize]
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -35,6 +38,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // GET api/Shipping/order/1
+        [Authorize]
         [HttpGet("order/{orderId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -49,6 +53,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // GET api/Shipping/status/Pending
+        [Authorize]
         [HttpGet("status/{status}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -63,6 +68,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // GET api/Shipping/carrier/DHL
+        [Authorize]
         [HttpGet("carrier/{carrier}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -77,6 +83,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // POST /api/Shipping
+        [Authorize]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -89,6 +96,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // PUT api/Shipping/1
+        [Authorize]
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -111,6 +119,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // PATCH api/Shipping/1/status/Shipped
+        [Authorize]
         [HttpPatch("{id}/status/{status}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -128,6 +137,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // PATCH api/Shipping/1/tracking/AB123456789
+        [Authorize]
         [HttpPatch("{id}/tracking/{trackNum}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -144,6 +154,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // PATCH api/Shipping/1/delivery
+        [Authorize]
         [HttpGet("{id}/delivery")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -160,6 +171,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // DELETE /api/Shipping/1
+        [Authorize]
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

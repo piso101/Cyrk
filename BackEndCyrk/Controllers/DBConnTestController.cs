@@ -1,4 +1,5 @@
 ﻿using BackEndCyrk.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,7 +17,7 @@ namespace BackEndCyrk.Controllers
             _context = context;
             _logger = logger;
         }
-
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> TestConnection()
         {

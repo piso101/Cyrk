@@ -2,6 +2,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BackEndCyrk.Models;
 using BackEndCyrk.Repositories;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BackEndCyrk.Controllers
 {
@@ -17,6 +18,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // GET: api/Orders
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -25,6 +27,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // GET: api/Orders/5
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -34,6 +37,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // POST: api/Orders
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] Order order)
         {
@@ -42,6 +46,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // PUT: api/Orders/5
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] Order order)
         {
@@ -51,6 +56,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // DELETE: api/Orders/5
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -59,6 +65,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // PATCH: api/Orders/5/status
+        [Authorize]
         [HttpPatch("{id}/status")]
         public async Task<IActionResult> UpdateStatus(int id, [FromBody] string status)
         {

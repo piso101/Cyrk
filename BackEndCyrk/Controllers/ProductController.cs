@@ -1,5 +1,6 @@
 using BackEndCyrk.Models;
 using BackEndCyrk.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
@@ -15,7 +16,7 @@ namespace BackEndCyrk.Controllers
         {
             _productRepository = productRepository;
         }
-
+        [Authorize]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Product>>> GetAllProducts()
@@ -23,7 +24,7 @@ namespace BackEndCyrk.Controllers
             var products = await _productRepository.GetAllAsync();
             return Ok(products);
         }
-
+        [Authorize]
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -32,7 +33,7 @@ namespace BackEndCyrk.Controllers
             var product = await _productRepository.GetByIdAsync(id);
             return product == null ? NotFound() : Ok(product);
         }
-
+        [Authorize]
         [HttpGet("category/{categoryId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Product>>> GetProductsByCategory(int categoryId)
@@ -40,7 +41,7 @@ namespace BackEndCyrk.Controllers
             var products = await _productRepository.GetByCategoryIdAsync(categoryId);
             return Ok(products);
         }
-
+        [Authorize]
         [HttpGet("search/{searchTerm}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Product>>> SearchProductsByName(string searchTerm)
@@ -48,7 +49,7 @@ namespace BackEndCyrk.Controllers
             var products = await _productRepository.SearchByNameAsync(searchTerm);
             return Ok(products);
         }
-
+        [Authorize]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -75,7 +76,7 @@ namespace BackEndCyrk.Controllers
                 return BadRequest($"Error creating product: {ex.Message}");
             }
         }
-
+        [Authorize]
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -108,7 +109,7 @@ namespace BackEndCyrk.Controllers
                 return BadRequest($"Error updating product: {ex.Message}");
             }
         }
-
+        [Authorize]
         [HttpPatch("{id}/stock/{quantity}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -123,7 +124,7 @@ namespace BackEndCyrk.Controllers
             var success = await _productRepository.UpdateStockAsync(id, quantity);
             return success ? NoContent() : BadRequest("Stock update failed");
         }
-
+        [Authorize]
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

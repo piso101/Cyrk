@@ -1,5 +1,6 @@
 using BackEndCyrk.Models;
 using BackEndCyrk.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BackEndCyrk.Controllers
@@ -16,6 +17,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // GET: api/Inventory
+        [Authorize]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Inventory>>> GetAllInventories()
@@ -25,6 +27,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // GET: api/Inventory/5
+        [Authorize]
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -37,6 +40,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // GET: api/Inventory/product/3
+        [Authorize]
         [HttpGet("product/{productId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -49,6 +53,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // GET: api/Inventory/lowstock/10
+        [Authorize]
         [HttpGet("lowstock/{threshold}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Inventory>>> GetLowStock(int threshold)
@@ -58,6 +63,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // GET: api/Inventory/updatedafter/2025-05-01T00:00:00Z
+        [Authorize]
         [HttpGet("updatedafter")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<Inventory>>> GetUpdatedAfter([FromQuery] DateTime since)
@@ -67,6 +73,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // POST: api/Inventory
+        [Authorize]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -80,6 +87,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // PUT: api/Inventory/5
+        [Authorize]
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -99,6 +107,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // PATCH: api/Inventory/5/quantity/20
+        [Authorize]
         [HttpPatch("{id}/quantity/{quantity}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -113,6 +122,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // PATCH: api/Inventory/5/lastupdated
+        [Authorize]
         [HttpPatch("{id}/lastupdated")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -127,6 +137,7 @@ namespace BackEndCyrk.Controllers
         }
 
         // DELETE: api/Inventory/5
+        [Authorize]
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

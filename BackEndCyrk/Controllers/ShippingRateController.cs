@@ -1,5 +1,6 @@
 ﻿using BackEndCyrk.Models;
 using BackEndCyrk.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BackEndCyrk.Controllers {
@@ -13,6 +14,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // GET: api/ShippingRate
+        [Authorize]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<ShippingRate>>> GetAllShippingRates() {
@@ -21,6 +23,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // GET: api/ShippingRate/1
+        [Authorize]
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -35,6 +38,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // GET: api/ShippingRate/carrier/DHL
+        [Authorize]
         [HttpGet("carrier/{carrier}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<ShippingRate>>> GetRatesByCarrier(string carrier) {
@@ -43,6 +47,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // GET: api/ShippingRate/package/Standard
+        [Authorize]
         [HttpGet("package/{packageType}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<ShippingRate>>> GetRatesByPackageType(string packageType) {
@@ -51,6 +56,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // GET: api/ShippingRate/carrier/DHL/package/Standard
+        [Authorize]
         [HttpGet("carrier/{carrier}/package/{packageType}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -65,6 +71,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // GET: api/ShippingRate/price-range/10/20
+        [Authorize]
         [HttpGet("price-range/{minPrice}/{maxPrice}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<ShippingRate>>> GetRatesByPriceRange(decimal minPrice, decimal maxPrice) {
@@ -73,6 +80,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // GET: api/ShippingRate/lowest
+        [Authorize]
         [HttpGet("lowest")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<decimal>> GetLowestRate() {
@@ -81,6 +89,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // GET: api/ShippingRate/highest
+        [Authorize]
         [HttpGet("highest")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<decimal>> GetHighestRate() {
@@ -89,6 +98,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // POST: api/ShippingRate
+        [Authorize]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -103,6 +113,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // PUT: api/ShippingRate/1
+        [Authorize]
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -127,6 +138,7 @@ namespace BackEndCyrk.Controllers {
         }
 
         // DELETE: api/ShippingRate/1
+        [Authorize]
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

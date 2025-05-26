@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\micha\\OneDrive\\Dokumenty\\ProjektPUM\\Cyrk\\BackEndCyrk\\BackEndCyrk.csproj": {}
+    "C:\\Users\\patry\\Desktop\\Cyrk\\BackEndCyrk\\BackEndCyrk.csproj": {}
   },
   "projects": {
-    "C:\\Users\\micha\\OneDrive\\Dokumenty\\ProjektPUM\\Cyrk\\BackEndCyrk\\BackEndCyrk.csproj": {
+    "C:\\Users\\patry\\Desktop\\Cyrk\\BackEndCyrk\\BackEndCyrk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\micha\\OneDrive\\Dokumenty\\ProjektPUM\\Cyrk\\BackEndCyrk\\BackEndCyrk.csproj",
+        "projectUniqueName": "C:\\Users\\patry\\Desktop\\Cyrk\\BackEndCyrk\\BackEndCyrk.csproj",
         "projectName": "BackEndCyrk",
-        "projectPath": "C:\\Users\\micha\\OneDrive\\Dokumenty\\ProjektPUM\\Cyrk\\BackEndCyrk\\BackEndCyrk.csproj",
-        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\micha\\OneDrive\\Dokumenty\\ProjektPUM\\Cyrk\\BackEndCyrk\\obj\\",
+        "projectPath": "C:\\Users\\patry\\Desktop\\Cyrk\\BackEndCyrk\\BackEndCyrk.csproj",
+        "packagesPath": "C:\\Users\\patry\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\patry\\Desktop\\Cyrk\\BackEndCyrk\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\patry\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,22 +39,30 @@
           "warnAsError": [
             "NU1605"
           ]
-<<<<<<< Updated upstream
-        }
-=======
         },
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
->>>>>>> Stashed changes
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.3, )"
@@ -76,6 +84,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[8.1.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.11.0, )"
             }
           },
           "imports": [
@@ -97,11 +109,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< Updated upstream
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

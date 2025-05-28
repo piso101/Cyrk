@@ -592,3 +592,8 @@ C:\Users\patry\Desktop\Cyrk\BackEndCyrk\bin\Debug\net8.0\Microsoft.IdentityModel
 C:\Users\patry\Desktop\Cyrk\BackEndCyrk\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\patry\Desktop\Cyrk\BackEndCyrk\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\patry\Desktop\Cyrk\BackEndCyrk\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\patry\Desktop\Cyrk\BackEndCyrk\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\patry\Desktop\Cyrk\BackEndCyrk\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\patry\Desktop\Cyrk\BackEndCyrk\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\patry\Desktop\Cyrk\BackEndCyrk\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\patry\Desktop\Cyrk\BackEndCyrk\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

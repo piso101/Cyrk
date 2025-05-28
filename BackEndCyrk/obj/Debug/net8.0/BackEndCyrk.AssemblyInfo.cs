@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackEndCyrk")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ce8e5b32a8aadfd7bed68fe0dfae0d39311a7d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33d7c03cf367cf97ccc01384c0c51ec35ead921d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackEndCyrk")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackEndCyrk")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

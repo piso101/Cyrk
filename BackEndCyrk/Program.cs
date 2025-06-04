@@ -35,19 +35,35 @@ namespace BackEndCyrk
             var secretKey = jwtSettings["SecretKey"] ?? "SuperTajnyKluczMinimum32ZnakiDlaJWT123456789";
 
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options =>
+            .AddJwtBearer(options =>
+            {
+                options.Events = new JwtBearerEvents
                 {
-                    options.TokenValidationParameters = new TokenValidationParameters
+                    OnMessageReceived = context =>
                     {
-                        ValidateIssuer = true,
-                        ValidateAudience = true,
-                        ValidateLifetime = true,
-                        ValidateIssuerSigningKey = true,
-                        ValidIssuer = jwtSettings["Issuer"] ?? "BackEndCyrk",
-                        ValidAudience = jwtSettings["Audience"] ?? "BackEndCyrkUsers",
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
-                    };
-                });
+                        // Sprawdź czy Authorization istnieje i NIE zawiera "Bearer "
+                        var authHeader = context.Request.Headers["Authorization"].FirstOrDefault();
+                        if (!string.IsNullOrEmpty(authHeader) && !authHeader.StartsWith("Bearer ", StringComparison.OrdinalIgnoreCase))
+                        {
+                            context.Token = authHeader; // Ustaw token bez "Bearer"
+                        }
+
+                        return Task.CompletedTask;
+                    }
+                };
+
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = jwtSettings["Issuer"] ?? "BackEndCyrk",
+                    ValidAudience = jwtSettings["Audience"] ?? "BackEndCyrkUsers",
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+                };
+            });
+
 
             builder.Services.AddAuthorization();
 

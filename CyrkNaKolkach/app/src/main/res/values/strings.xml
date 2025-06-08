@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Cyrk Na Kółkach</string>
+    <string name="login">Zaloguj się</string>
+    <string name="register">Zarejestruj się</string>
+    <string name="email">Email</string>
+    <string name="password">Hasło</string>
+    <string name="name">Imię</string>
+    <string name="surname">Nazwisko</string>
+    <string name="confirm_password">Potwierdź hasło</string>
+    <string name="address">Adres</string>
+    <string name="phone">Telefon</string>
+    <string name="products">Produkty</string>
+    <string name="categories">Kategorie</string>
+    <string name="orders">Zamówienia</string>
+    <string name="users">Użytkownicy</string>
+    <string name="logout">Wyloguj</string>
+    <string name="refresh">Odśwież</string>
+    <string name="add">Dodaj</string>
+    <string name="edit">Edytuj</string>
+    <string name="delete">Usuń</string>
+    <string name="cancel">Anuluj</string>
+    <string name="save">Zapisz</string>
+    <string name="loading">Ładowanie...</string>
+    <string name="error">Błąd</string>
+    <string name="success">Sukces</string>
+</resources>

@@ -1,7 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\patry\\Desktop\\Cyrk\\BackEndCyrk\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|c:\\users\\piokn\\desktop\\laby_i_tym_podobne\\sem6\\projektgrupowy\\cyrk\\backendcyrk\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F95D874-0488-46FF-9BC8-B4459D27EA96}|BackEndCyrk.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +22,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -22,6 +39,43 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T20:13:13.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAgwA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T20:12:44.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\piokn\\Desktop\\Laby_i_tym_podobne\\Sem6\\ProjektGrupowy\\Cyrk\\BackEndCyrk\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwDMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T20:12:39.23Z",
+              "EditorCaption": ""
             }
           ]
         }

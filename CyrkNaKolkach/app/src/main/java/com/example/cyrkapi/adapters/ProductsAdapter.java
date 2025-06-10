@@ -21,8 +21,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
 
     public interface OnProductClickListener {
         void onProductClick(Product product);
-        void onEditClick(Product product);
-        void onDeleteClick(Product product);
+        // Usunięte: onEditClick i onDeleteClick
     }
 
     public ProductsAdapter(List<Product> products, OnProductClickListener listener) {
@@ -53,8 +52,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
         private TextView tvProductDescription;
         private TextView tvProductPrice;
         private TextView tvProductStock;
-        private ImageButton btnEdit;
-        private ImageButton btnDelete;
+        private ImageButton btnViewDetails;
 
         public ProductViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -62,8 +60,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
             tvProductDescription = itemView.findViewById(R.id.tvProductDescription);
             tvProductPrice = itemView.findViewById(R.id.tvProductPrice);
             tvProductStock = itemView.findViewById(R.id.tvProductStock);
-            btnEdit = itemView.findViewById(R.id.btnEdit);
-            btnDelete = itemView.findViewById(R.id.btnDelete);
+            btnViewDetails = itemView.findViewById(R.id.btnViewDetails);
         }
 
         public void bind(Product product, OnProductClickListener listener) {
@@ -81,23 +78,21 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
                 tvProductStock.setBackgroundColor(itemView.getContext().getColor(android.R.color.holo_green_light));
             }
 
+            // Kliknięcie w cały element - przejdź do szczegółów
             itemView.setOnClickListener(v -> {
                 if (listener != null) {
                     listener.onProductClick(product);
                 }
             });
 
-            btnEdit.setOnClickListener(v -> {
-                if (listener != null) {
-                    listener.onEditClick(product);
-                }
-            });
-
-            btnDelete.setOnClickListener(v -> {
-                if (listener != null) {
-                    listener.onDeleteClick(product);
-                }
-            });
+            // Przycisk szczegółów (oko)
+            if (btnViewDetails != null) {
+                btnViewDetails.setOnClickListener(v -> {
+                    if (listener != null) {
+                        listener.onProductClick(product);
+                    }
+                });
+            }
         }
     }
 }

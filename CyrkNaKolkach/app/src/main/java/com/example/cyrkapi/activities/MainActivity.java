@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     private ApiService apiService;
     private Toolbar toolbar;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -113,6 +115,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
+
+        // DODAJ TO:
+        if (itemId == R.id.action_cart) {
+            Intent intent = new Intent(this, CartActivity.class);
+            startActivity(intent);
+            return true;
+        }
 
         if (itemId == R.id.action_logout) {
             logout();

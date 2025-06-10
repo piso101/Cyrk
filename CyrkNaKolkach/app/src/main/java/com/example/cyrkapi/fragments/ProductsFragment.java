@@ -1,6 +1,7 @@
 package com.example.cyrkapi.fragments;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.cyrkapi.R;
+import com.example.cyrkapi.activities.ProductDetailActivity;
 import com.example.cyrkapi.adapters.ProductsAdapter;
 import com.example.cyrkapi.models.Product;
 import com.example.cyrkapi.services.ApiService;
@@ -58,18 +60,13 @@ public class ProductsFragment extends Fragment {
         adapter = new ProductsAdapter(productList, new ProductsAdapter.OnProductClickListener() {
             @Override
             public void onProductClick(Product product) {
-                showProductDetails(product);
+                // Przejdź do szczegółów produktu
+                Intent intent = new Intent(getContext(), ProductDetailActivity.class);
+                intent.putExtra(ProductDetailActivity.EXTRA_PRODUCT_ID, product.id);
+                startActivity(intent);
             }
 
-            @Override
-            public void onEditClick(Product product) {
-                showEditProductDialog(product);
-            }
-
-            @Override
-            public void onDeleteClick(Product product) {
-                showDeleteConfirmation(product);
-            }
+            // Usunięte: onEditClick i onDeleteClick
         });
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

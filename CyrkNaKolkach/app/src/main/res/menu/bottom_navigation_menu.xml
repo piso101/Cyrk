@@ -4,15 +4,7 @@
         android:icon="@android:drawable/ic_menu_gallery"
         android:title="Produkty" />
     <item
-        android:id="@+id/nav_categories"
-        android:icon="@android:drawable/ic_menu_sort_by_size"
-        android:title="Kategorie" />
-    <item
         android:id="@+id/nav_orders"
         android:icon="@android:drawable/ic_menu_agenda"
         android:title="Zamówienia" />
-    <item
-        android:id="@+id/nav_users"
-        android:icon="@android:drawable/ic_menu_myplaces"
-        android:title="Użytkownicy" />
 </menu>

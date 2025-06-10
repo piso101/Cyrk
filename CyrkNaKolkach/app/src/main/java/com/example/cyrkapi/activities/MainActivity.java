@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
     private ApiService apiService;
     private Toolbar toolbar;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
     private void setupToolbar() {
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Cyrk API Manager");
+            getSupportActionBar().setTitle("Cyrk na kółkach");
+            // Ustaw ikonę koszyka zamiast hamburgera
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_shopping_cart);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
     }
 
@@ -68,12 +69,10 @@ public class MainActivity extends AppCompatActivity {
             int itemId = item.getItemId();
             if (itemId == R.id.nav_products) {
                 selectedFragment = new ProductsFragment();
-            } else if (itemId == R.id.nav_categories) {
-                selectedFragment = new CategoriesFragment();
+
             } else if (itemId == R.id.nav_orders) {
                 selectedFragment = new OrdersFragment();
-            } else if (itemId == R.id.nav_users) {
-                selectedFragment = new UsersFragment();
+
             }
 
             if (selectedFragment != null) {
@@ -116,12 +115,14 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
 
-        // DODAJ TO:
-        if (itemId == R.id.action_cart) {
+        // Obsługa kliknięcia ikonki koszyka
+        if (itemId == android.R.id.home) {
             Intent intent = new Intent(this, CartActivity.class);
             startActivity(intent);
             return true;
         }
+
+
 
         if (itemId == R.id.action_logout) {
             logout();

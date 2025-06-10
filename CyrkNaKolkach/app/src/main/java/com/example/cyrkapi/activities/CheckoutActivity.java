@@ -198,27 +198,55 @@ public class CheckoutActivity extends AppCompatActivity {
     }
 
     private void createOrder() {
+        showProgress(true);
+
         // Przygotuj dane zamówienia
         OrderCreateDto orderDto = new OrderCreateDto();
         orderDto.user_id = 1; // TODO: Pobierz z sesji użytkownika
         orderDto.total_price = finalTotal;
         orderDto.status = "Pending";
 
-        apiService.createOrder(orderDto, new ApiService.ApiCallback<Order>() {
+        // Pobierz aktualną zawartość koszyka
+        List<CartItem> cartItems = cartManager.getCartItems();
+
+        // Najpierw sprawdź dostępność produktów
+        apiService.validateCartAvailability(cartItems, new ApiService.ApiCallback<Boolean>() {
             @Override
-            public void onSuccess(Order result) {
-                runOnUiThread(() -> {
+            public void onSuccess(Boolean allAvailable) {
+                if (!allAvailable) {
                     showProgress(false);
-                    onOrderCreated(result);
+                    new androidx.appcompat.app.AlertDialog.Builder(CheckoutActivity.this)
+                            .setTitle("Uwaga!")
+                            .setMessage("Niektóre produkty w koszyku nie są już dostępne w wybranej ilości. Sprawdź koszyk i spróbuj ponownie.")
+                            .setPositiveButton("OK", null)
+                            .show();
+                    return;
+                }
+
+                // Jeśli wszystko dostępne, utwórz zamówienie z aktualizacją stanu
+                apiService.createOrderWithStockUpdate(orderDto, cartItems, new ApiService.ApiCallback<Order>() {
+                    @Override
+                    public void onSuccess(Order result) {
+                        runOnUiThread(() -> {
+                            showProgress(false);
+                            onOrderCreated(result);
+                        });
+                    }
+
+                    @Override
+                    public void onError(String error) {
+                        runOnUiThread(() -> {
+                            showProgress(false);
+                            Toast.makeText(CheckoutActivity.this, "Błąd tworzenia zamówienia: " + error, Toast.LENGTH_LONG).show();
+                        });
+                    }
                 });
             }
 
             @Override
             public void onError(String error) {
-                runOnUiThread(() -> {
-                    showProgress(false);
-                    Toast.makeText(CheckoutActivity.this, "Błąd tworzenia zamówienia: " + error, Toast.LENGTH_LONG).show();
-                });
+                showProgress(false);
+                Toast.makeText(CheckoutActivity.this, "Błąd sprawdzania dostępności: " + error, Toast.LENGTH_LONG).show();
             }
         });
     }

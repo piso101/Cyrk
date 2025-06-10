@@ -11,7 +11,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cyrk API Manager"
+        android:text="Cyrk Na Kółkach"
         android:textSize="28sp"
         android:textStyle="bold"
         android:layout_marginBottom="32dp"

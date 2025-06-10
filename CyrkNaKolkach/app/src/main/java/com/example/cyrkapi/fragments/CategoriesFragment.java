@@ -47,7 +47,7 @@ public class CategoriesFragment extends Fragment {
     private void initViews(View view) {
         recyclerView = view.findViewById(R.id.recyclerViewCategories);
         swipeRefreshLayout = view.findViewById(R.id.swipeRefreshLayout);
-        fabAdd = view.findViewById(R.id.fabAddCategory);
+
 
         swipeRefreshLayout.setOnRefreshListener(this::loadCategories);
         fabAdd.setOnClickListener(v -> addCategory());

@@ -37,7 +37,7 @@ public class OrdersFragment extends Fragment {
         initViews(view);
         setupRecyclerView();
         initApiService();
-        loadOrders();
+        loadUserOrders(); // ZMIANA: loadOrders() -> loadUserOrders()
 
         return view;
     }
@@ -46,7 +46,7 @@ public class OrdersFragment extends Fragment {
         recyclerView = view.findViewById(R.id.recyclerViewOrders);
         swipeRefreshLayout = view.findViewById(R.id.swipeRefreshLayout);
 
-        swipeRefreshLayout.setOnRefreshListener(this::loadOrders);
+        swipeRefreshLayout.setOnRefreshListener(this::loadUserOrders); // ZMIANA: loadOrders() -> loadUserOrders()
     }
 
     private void setupRecyclerView() {
@@ -59,10 +59,10 @@ public class OrdersFragment extends Fragment {
         apiService = ApiService.getInstance(getContext());
     }
 
-    private void loadOrders() {
+    private void loadUserOrders() { // ZMIANA NAZWY: loadOrders() -> loadUserOrders()
         swipeRefreshLayout.setRefreshing(true);
 
-        apiService.getAllOrders(new ApiService.ApiCallback<List<Order>>() {
+        apiService.getUserOrders(new ApiService.ApiCallback<List<Order>>() { // ZMIANA: getAllOrders() -> getUserOrders()
             @Override
             public void onSuccess(List<Order> result) {
                 if (getActivity() != null) {

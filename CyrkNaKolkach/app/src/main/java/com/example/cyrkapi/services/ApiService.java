@@ -11,6 +11,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -170,8 +171,175 @@ public class ApiService {
     }
 
     // Order Controller
+
+    // W ApiService.java dodaj te metody:
+
+    /**
+     * Tworzy zamówienie i automatycznie odejmuje stan magazynowy
+     */
+    public void createOrderWithStockUpdate(OrderCreateDto orderDto, List<CartItem> cartItems, ApiCallback<Order> callback) {
+        // Najpierw utwórz zamówienie
+        createOrder(orderDto, new ApiCallback<Order>() {
+            @Override
+            public void onSuccess(Order result) {
+                // Jeśli zamówienie się udało, odejmij stan magazynowy
+                updateProductStock(cartItems, new ApiCallback<Void>() {
+                    @Override
+                    public void onSuccess(Void stockResult) {
+                        // Wszystko się udało - zwróć zamówienie
+                        callback.onSuccess(result);
+                    }
+
+                    @Override
+                    public void onError(String error) {
+                        // Stan się nie zaktualizował, ale zamówienie jest już utworzone
+                        // Loguj błąd ale nie blokuj procesu
+                        android.util.Log.w("ApiService", "Nie udało się zaktualizować stanu: " + error);
+                        callback.onSuccess(result); // Zwróć zamówienie mimo błędu stanu
+                    }
+                });
+            }
+
+            @Override
+            public void onError(String error) {
+                // Zamówienie się nie udało
+                callback.onError(error);
+            }
+        });
+    }
+
+    /**
+     * Aktualizuje stan magazynowy dla listy produktów z koszyka
+     */
+    private void updateProductStock(List<CartItem> cartItems, ApiCallback<Void> callback) {
+        if (cartItems == null || cartItems.isEmpty()) {
+            callback.onSuccess(null);
+            return;
+        }
+
+        // Licznik do śledzenia ukończonych aktualizacji
+        final int[] completedUpdates = {0};
+        final int totalUpdates = cartItems.size();
+        final boolean[] hasError = {false};
+
+        for (CartItem item : cartItems) {
+            Product product = item.getProduct();
+            int newStock = Math.max(0, product.stock - item.getQuantity()); // Nie pozwól na ujemny stan
+
+            updateProductStock(product.id, newStock, new ApiCallback<Void>() {
+                @Override
+                public void onSuccess(Void result) {
+                    completedUpdates[0]++;
+
+                    // Zaktualizuj lokalnie obiekt produktu
+                    product.stock = newStock;
+
+                    // Sprawdź czy wszystkie aktualizacje się skończyły
+                    if (completedUpdates[0] >= totalUpdates) {
+                        if (!hasError[0]) {
+                            callback.onSuccess(null);
+                        }
+                    }
+                }
+
+                @Override
+                public void onError(String error) {
+                    hasError[0] = true;
+                    completedUpdates[0]++;
+
+                    android.util.Log.e("ApiService", "Błąd aktualizacji stanu dla produktu " + product.id + ": " + error);
+
+                    // Sprawdź czy wszystkie aktualizacje się skończyły
+                    if (completedUpdates[0] >= totalUpdates) {
+                        callback.onError("Nie udało się zaktualizować stanu niektórych produktów");
+                    }
+                }
+            });
+        }
+    }
+
+    /**
+     * Pomocnicza metoda do walidacji dostępności produktów przed zamówieniem
+     */
+    public void validateCartAvailability(List<CartItem> cartItems, ApiCallback<Boolean> callback) {
+        if (cartItems == null || cartItems.isEmpty()) {
+            callback.onSuccess(true);
+            return;
+        }
+
+        final int[] completedChecks = {0};
+        final int totalChecks = cartItems.size();
+        final boolean[] allAvailable = {true};
+
+        for (CartItem item : cartItems) {
+            // Pobierz aktualny stan produktu z serwera
+            getProduct(item.getProduct().id, new ApiCallback<Product>() {
+                @Override
+                public void onSuccess(Product currentProduct) {
+                    completedChecks[0]++;
+
+                    // Sprawdź czy wystarczy stanu
+                    if (currentProduct.stock < item.getQuantity()) {
+                        allAvailable[0] = false;
+
+                        // Opcjonalnie: zaktualizuj lokalny obiekt
+                        item.getProduct().stock = currentProduct.stock;
+                    }
+
+                    // Sprawdź czy wszystkie sprawdzenia się skończyły
+                    if (completedChecks[0] >= totalChecks) {
+                        callback.onSuccess(allAvailable[0]);
+                    }
+                }
+
+                @Override
+                public void onError(String error) {
+                    completedChecks[0]++;
+                    allAvailable[0] = false;
+
+                    // Sprawdź czy wszystkie sprawdzenia się skończyły
+                    if (completedChecks[0] >= totalChecks) {
+                        callback.onError("Nie udało się sprawdzić dostępności produktów");
+                    }
+                }
+            });
+        }
+    }
     public void getAllOrders(ApiCallback<List<Order>> callback) {
         apiInterface.getAllOrders().enqueue(new CallbackWrapper<>(callback));
+    }
+
+    public void getUserOrders(ApiCallback<List<Order>> callback) {
+        // Najpierw pobierz ID aktualnego użytkownika
+        getCurrentUser(new ApiCallback<UserMeDto>() {
+            @Override
+            public void onSuccess(UserMeDto userDto) {
+                // Następnie pobierz wszystkie zamówienia
+                apiInterface.getAllOrders().enqueue(new CallbackWrapper<List<Order>>(new ApiCallback<List<Order>>() {
+                    @Override
+                    public void onSuccess(List<Order> allOrders) {
+                        // Filtruj zamówienia dla aktualnego użytkownika
+                        List<Order> userOrders = new ArrayList<>();
+                        for (Order order : allOrders) {
+                            if (order.user_id == Integer.parseInt(userDto.id)) {
+                                userOrders.add(order);
+                            }
+                        }
+                        callback.onSuccess(userOrders);
+                    }
+
+                    @Override
+                    public void onError(String error) {
+                        callback.onError(error);
+                    }
+                }));
+            }
+
+            @Override
+            public void onError(String error) {
+                callback.onError("Błąd pobierania danych użytkownika: " + error);
+            }
+        });
     }
 
     public void getOrder(int id, ApiCallback<Order> callback) {

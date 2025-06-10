@@ -23,6 +23,7 @@ import com.example.cyrkapi.models.CartItem;
 import com.example.cyrkapi.models.Order;
 import com.example.cyrkapi.services.ApiService;
 import com.example.cyrkapi.utils.CartManager;
+import com.example.cyrkapi.models.User;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -57,6 +58,34 @@ public class CheckoutActivity extends AppCompatActivity {
         loadOrderData();
         setupClickListeners();
         calculateShipping();
+        loadUserData();
+    }
+
+    private void loadUserData() {
+        apiService.getCurrentUserDetails(new ApiService.ApiCallback<User>() {
+            @Override
+            public void onSuccess(User user) {
+                // Automatycznie wypełnij formularz danymi użytkownika
+                if (user.name != null && user.surname != null) {
+                    etShippingName.setText(user.name + " " + user.surname);
+                }
+                if (user.address != null) {
+                    etShippingAddress.setText(user.address);
+                }
+                if (user.phone != null) {
+                    etShippingPhone.setText(user.phone);
+                }
+                if (user.email != null) {
+                    etShippingEmail.setText(user.email);
+                }
+            }
+
+            @Override
+            public void onError(String error) {
+                // Nie blokuj procesu - użytkownik może wypełnić ręcznie
+                android.util.Log.w("CheckoutActivity", "Nie udało się załadować danych użytkownika: " + error);
+            }
+        });
     }
 
     private void initViews() {

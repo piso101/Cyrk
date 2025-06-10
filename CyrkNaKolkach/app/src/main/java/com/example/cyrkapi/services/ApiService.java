@@ -115,6 +115,40 @@ public class ApiService {
     public void getCurrentUser(ApiCallback<UserMeDto> callback) {
         apiInterface.getCurrentUser().enqueue(new CallbackWrapper<>(callback));
     }
+    public void getCurrentUserDetails(ApiCallback<User> callback) {
+        getCurrentUser(new ApiCallback<UserMeDto>() {
+            @Override
+            public void onSuccess(UserMeDto userMeDto) {
+                int userId = Integer.parseInt(userMeDto.id);
+                getUser(userId, new ApiCallback<UserReadDto>() {
+                    @Override
+                    public void onSuccess(UserReadDto userReadDto) {
+                        // Konwertuj UserReadDto na User
+                        User user = new User();
+                        user.id = userReadDto.id;
+                        user.name = userReadDto.name;
+                        user.surname = userReadDto.surname;
+                        user.email = userReadDto.email;
+                        user.address = userReadDto.address;
+                        user.phone = userReadDto.phone;
+                        user.created_at = userReadDto.created_at;
+
+                        callback.onSuccess(user);
+                    }
+
+                    @Override
+                    public void onError(String error) {
+                        callback.onError(error);
+                    }
+                });
+            }
+
+            @Override
+            public void onError(String error) {
+                callback.onError("Błąd pobierania danych użytkownika: " + error);
+            }
+        });
+    }
 
     // Category Controller
     public void getAllCategories(ApiCallback<List<Category>> callback) {

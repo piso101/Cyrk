@@ -16,6 +16,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.example.cyrkapi.R;
 import com.example.cyrkapi.adapters.OrdersAdapter;
 import com.example.cyrkapi.models.Order;
+import com.example.cyrkapi.models.User;
 import com.example.cyrkapi.services.ApiService;
 
 import java.util.ArrayList;

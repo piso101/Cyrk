@@ -19,6 +19,7 @@ import java.util.concurrent.TimeUnit;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.ResponseBody;
 import okhttp3.Response;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -109,7 +110,21 @@ public class ApiService {
     }
 
     public void register(UserRegisterDto registerDto, ApiCallback<String> callback) {
-        apiInterface.register(registerDto).enqueue(new CallbackWrapper<>(callback));
+        apiInterface.register(registerDto).enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, retrofit2.Response<ResponseBody> response) {
+                if (response.isSuccessful()) {
+                    callback.onSuccess("Rejestracja pomyślna");
+                } else {
+                    callback.onError("Błąd rejestracji: " + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+                callback.onError("Network Error: " + t.getMessage());
+            }
+        });
     }
 
     public void getCurrentUser(ApiCallback<UserMeDto> callback) {
@@ -457,7 +472,7 @@ public class ApiService {
         Call<AuthResultDto> login(@Body UserLoginDto loginDto);
 
         @POST("api/Auth/register")
-        Call<String> register(@Body UserRegisterDto registerDto);
+        Call<ResponseBody> register(@Body UserRegisterDto registerDto);
 
         @GET("api/Auth/me")
         Call<UserMeDto> getCurrentUser();

@@ -93,7 +93,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onSuccess(String result) {
                 showProgress(false);
                 Toast.makeText(RegisterActivity.this, "Rejestracja zakończona pomyślnie!", Toast.LENGTH_LONG).show();
-                finish(); // Wróć do ekranu logowania
+                finish();
             }
 
             @Override

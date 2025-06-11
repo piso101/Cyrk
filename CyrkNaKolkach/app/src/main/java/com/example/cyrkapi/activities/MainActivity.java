@@ -12,10 +12,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.cyrkapi.R;
-import com.example.cyrkapi.fragments.CategoriesFragment;
 import com.example.cyrkapi.fragments.OrdersFragment;
 import com.example.cyrkapi.fragments.ProductsFragment;
-import com.example.cyrkapi.fragments.UsersFragment;
+import com.example.cyrkapi.fragments.ProfileFragment;
 import com.example.cyrkapi.dtos.UserMeDto;
 import com.example.cyrkapi.services.ApiService;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -69,10 +68,15 @@ public class MainActivity extends AppCompatActivity {
             int itemId = item.getItemId();
             if (itemId == R.id.nav_products) {
                 selectedFragment = new ProductsFragment();
+                updateToolbarTitle("Produkty");
 
             } else if (itemId == R.id.nav_orders) {
                 selectedFragment = new OrdersFragment();
+                updateToolbarTitle("Moje zamówienia");
 
+            } else if (itemId == R.id.nav_profile) {
+                selectedFragment = new ProfileFragment();
+                updateToolbarTitle("Mój profil");
             }
 
             if (selectedFragment != null) {
@@ -81,6 +85,12 @@ public class MainActivity extends AppCompatActivity {
             }
             return false;
         });
+    }
+
+    private void updateToolbarTitle(String title) {
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(title);
+        }
     }
 
     private void loadFragment(Fragment fragment) {
@@ -122,8 +132,6 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
-
-
         if (itemId == R.id.action_logout) {
             logout();
             return true;
@@ -161,9 +169,22 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        // Zablokuj wracanie do ekranu logowania
-        // Zamiast tego minimalizuj aplikację
-        moveTaskToBack(true);
+        // Sprawdź który fragment jest aktualnie wyświetlany
+        Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
+
+        // Jeśli nie jesteśmy na fragmencie produktów, przejdź do niego
+        if (!(currentFragment instanceof ProductsFragment)) {
+            bottomNavigationView.setSelectedItemId(R.id.nav_products);
+        } else {
+            // Jeśli jesteśmy na produktach, wywołaj domyślne zachowanie
+            super.onBackPressed();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Odśwież informacje o użytkowniku po powrocie do aktywności
+        loadUserInfo();
     }
 }

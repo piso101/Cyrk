@@ -444,7 +444,7 @@ public class ApiService {
 
         @Override
         public void onResponse(Call<T> call, retrofit2.Response<T> response) {
-            if (response.isSuccessful() && response.body() != null) {
+            if (response.isSuccessful()) {
                 callback.onSuccess(response.body());
             } else {
                 String error = "API Error: " + response.code();

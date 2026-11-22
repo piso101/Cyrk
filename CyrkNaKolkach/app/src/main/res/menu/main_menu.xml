@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- DODAJ IKONĘ KOSZYKA -->
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:title="Odśwież"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_test_api"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="Test API"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="Wyloguj"
+        app:showAsAction="never" />
+</menu>

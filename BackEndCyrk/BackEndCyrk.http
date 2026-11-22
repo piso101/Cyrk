@@ -1,0 +1,6 @@
+@BackEndCyrk_HostAddress = http://localhost:5101
+
+GET {{BackEndCyrk_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

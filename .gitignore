@@ -1,0 +1,44 @@
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+
+[Bb]in/
+[Oo]bj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+out/
+dist/
+
+# Android
+*.iml
+.gradle/
+gradle-app.setting
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+appsettings.*.json
+!appsettings.json
+appsettings.Local.json
+secrets.json
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+*.log
